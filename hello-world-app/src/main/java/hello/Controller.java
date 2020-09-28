@@ -15,6 +15,7 @@ public class Controller {
 
 	@PostMapping
 	public String apply(@RequestBody String name) {
+		System.out.println("test");
 		return greeter.greet(name);
 	}
 }
